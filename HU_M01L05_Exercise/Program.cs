@@ -122,30 +122,45 @@ namespace HU_M01L05_Exercise
             //    inputNumberA = int.Parse(Console.ReadLine());
             //}
 
-            // Q9 - Print the number of even and odd numbers
-            int inputNumberB = 0;
-            int evenNumberCount = 0;
-            int oddNumberCount = 0;
+            //// Q9 - Print the number of even and odd numbers
+            //int inputNumberB = 0;
+            //int evenNumberCount = 0;
+            //int oddNumberCount = 0;
 
-            Console.WriteLine("Please enter a number");
-            inputNumberB = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter a number");
+            //inputNumberB = int.Parse(Console.ReadLine());
 
-            while (inputNumberB != 0)
+            //while (inputNumberB != 0)
+            //{
+            //    if (inputNumberB % 2 == 0)
+            //    {
+            //        evenNumberCount++;
+            //    }
+            //    else
+            //    {
+            //        oddNumberCount++;
+            //    }
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumberB = int.Parse(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Even numbers count is " + evenNumberCount + "\n" + "Odd numbers count is " + oddNumberCount);
+
+            // Q10 - Print the number backwards binary representation
+
+            int inputNumberC = 0;
+            string binary = null;
+            string reverseBinary = null;
+
+            do
             {
-                if (inputNumberB % 2 == 0)
-                {
-                    evenNumberCount++;
-                }
-                else
-                {
-                    oddNumberCount++;
-                }
                 Console.WriteLine("Please enter a number");
-                inputNumberB = int.Parse(Console.ReadLine());
-            }
-
-            Console.WriteLine("Even numbers count is " + evenNumberCount + "\n" + "Odd numbers count is " + oddNumberCount);
-
+                inputNumberC = int.Parse(Console.ReadLine());
+                binary = Convert.ToString(inputNumberC, 2);
+                reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
+                Console.WriteLine(binary);
+                Console.WriteLine(reverseBinary);
+            } while (inputNumberC > 0);
 
         }
     }
