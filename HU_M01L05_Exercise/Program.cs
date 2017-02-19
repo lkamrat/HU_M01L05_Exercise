@@ -122,7 +122,7 @@ namespace HU_M01L05_Exercise
             //    inputNumberA = int.Parse(Console.ReadLine());
             //}
 
-            //// Q9 - Print the number of even and odd numbers
+            //// Q9 - Print the count of even and odd numbers
             //int inputNumberB = 0;
             //int evenNumberCount = 0;
             //int oddNumberCount = 0;
@@ -146,21 +146,69 @@ namespace HU_M01L05_Exercise
 
             //Console.WriteLine("Even numbers count is " + evenNumberCount + "\n" + "Odd numbers count is " + oddNumberCount);
 
-            // Q10 - Print the number backwards binary representation
+            //// Q10 - Print the number's backwards binary representation
+            //int inputNumberC = 0;
+            //string binary = null;
+            //string reverseBinary = null;
 
-            int inputNumberC = 0;
-            string binary = null;
-            string reverseBinary = null;
+            //do
+            //{
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumberC = int.Parse(Console.ReadLine());
+            //    binary = Convert.ToString(inputNumberC, 2);
+            //    reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
+            //    Console.WriteLine(binary);
+            //    Console.WriteLine(reverseBinary);
+            //} while (inputNumberC > 0);
 
-            do
+            //// Q11 - Print the count of positive and negative numbers. Exit program when the entered number is 0
+            //int inputNumberD = 0;
+            //int positiveCount = 0;
+            //int negativeCount = 0;
+            //Console.WriteLine("Please enter a number");
+            //inputNumberD = int.Parse(Console.ReadLine());
+            //while (inputNumberD != 0)
+            //{
+            //    if (inputNumberD > 0)
+            //    {
+            //        positiveCount++;
+            //    }
+            //    else
+            //    {
+            //        negativeCount++;
+            //    }
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumberD = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("Positive Numbers: " + positiveCount + "\n" + "Negative Numbers: " + negativeCount);
+
+            //// Q12 - Print the highest and the lowest number. Exit program when the entered number is 0
+            //int inputNumberE = 0;
+            //int highestNumber = 0;
+            //int lowestNumber = 0;
+
+            //Console.WriteLine("Please enter a number");
+            //inputNumberD = int.Parse(Console.ReadLine());
+            //while (inputNumberE != 0)
+            //{
+
+            //}
+
+            // Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
+            int inputNumberF = 0;
+            int tenCount = 0;
+            Console.WriteLine("Please enter a number");
+            inputNumberF = int.Parse(Console.ReadLine());
+            while (inputNumberF != 12)
             {
+                if (inputNumberF == 10)
+                {
+                    tenCount++;
+                }
                 Console.WriteLine("Please enter a number");
-                inputNumberC = int.Parse(Console.ReadLine());
-                binary = Convert.ToString(inputNumberC, 2);
-                reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
-                Console.WriteLine(binary);
-                Console.WriteLine(reverseBinary);
-            } while (inputNumberC > 0);
+                inputNumberF = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("The number of times the number 10 was entered is " + tenCount);
 
         }
     }
