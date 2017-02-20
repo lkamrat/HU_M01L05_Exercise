@@ -206,12 +206,6 @@ namespace HU_M01L05_Exercise
 
             Console.WriteLine("The highest number is " + highestNumber + "\n" + "The lowest number is " + lowestNumber);
 
-
-
-
-
-
-
             //// Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
             //int inputNumberF = 0;
             //int tenCount = 0;
