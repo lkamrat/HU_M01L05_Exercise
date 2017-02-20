@@ -194,21 +194,101 @@ namespace HU_M01L05_Exercise
 
             //}
 
-            // Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
-            int inputNumberF = 0;
-            int tenCount = 0;
-            Console.WriteLine("Please enter a number");
-            inputNumberF = int.Parse(Console.ReadLine());
-            while (inputNumberF != 12)
+            //// Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
+            //int inputNumberF = 0;
+            //int tenCount = 0;
+            //Console.WriteLine("Please enter a number");
+            //inputNumberF = int.Parse(Console.ReadLine());
+            //while (inputNumberF != 12)
+            //{
+            //    if (inputNumberF == 10)
+            //    {
+            //        tenCount++;
+            //    }
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumberF = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("The number of times the number 10 was entered is " + tenCount);
+
+            //// Q21 - Print the result of "y=0.5x+60". Exit program if y=100
+
+            //int x = 0;
+            //double y = 0;
+
+            //while (y != 100)
+            //{
+            //    Console.WriteLine("Please enter x value");
+            //    x = int.Parse(Console.ReadLine());
+            //    y = (0.5 * x) + 60;
+            //    Console.WriteLine("y is " + y);
+            //}
+            //Console.WriteLine("y " + " = " + y + " . " + " Quit!");
+
+
+
+
+            //// Q23 - Print how many Oranges or Lemons. Exit program with the word "Stop"
+            //int lemonsCount = 0;
+            //int orangesCound = 0;
+
+            //Console.WriteLine("Do you want lemon or orange?");
+            //string fruit = Console.ReadLine();
+            //while (fruit != "stop")
+            //{
+            //    if (fruit == "lemon")
+            //    {
+            //        lemonsCount++;
+            //    }
+            //    else
+            //    {
+            //        orangesCound++;
+            //    }
+            //    Console.WriteLine("Do you want lemon or orange?");
+            //    fruit = Console.ReadLine();
+            //}
+            //Console.WriteLine("Number of lemons: " + lemonsCount + "\n" + "Number of oranges: " + orangesCound);
+
+            // Q24 - Print only the first name of the pepole with the last name of "Cohen". Exit program when pepole with last name of "Levi" was entered. 
+            Console.WriteLine("Please enter first name");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Please enter last name");
+            string lastName = Console.ReadLine();
+
+            while (lastName != "Levi")
             {
-                if (inputNumberF == 10)
+                if (lastName == "Cohen")
                 {
-                    tenCount++;
+                    Console.WriteLine("The first name is " + firstName);
+                    Console.WriteLine("Please enter first name");
+                    firstName = Console.ReadLine();
+                    Console.WriteLine("Please enter last name");
+                    lastName = Console.ReadLine();
                 }
-                Console.WriteLine("Please enter a number");
-                inputNumberF = int.Parse(Console.ReadLine());
+                else
+                {
+                    Console.WriteLine("Please enter first name");
+                    firstName = Console.ReadLine();
+                    Console.WriteLine("Please enter last name");
+                    lastName = Console.ReadLine();
+                }
             }
-            Console.WriteLine("The number of times the number 10 was entered is " + tenCount);
+
+            //// Q25 - Print the the lowercase and uppercase count. Exit program when a number is entered. 
+            //int upperCount = 0;
+            //int lowerCount = 0;
+
+            //Console.WriteLine("Please enter a letter");
+            //string letter = Console.ReadLine();
+
+            //while (letter.Any(char.IsUpper) && letter.Any(char.IsLower))
+            //{
+            //    if (letter.Any(char.IsUpper))
+            //    {
+            //        upperCount++;
+            //    }
+            //    Console.WriteLine("Please enter a letter");
+            //    letter = Console.ReadLine();
+            //}
 
         }
     }
