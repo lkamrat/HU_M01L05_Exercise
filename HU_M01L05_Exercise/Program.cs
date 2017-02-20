@@ -182,17 +182,35 @@ namespace HU_M01L05_Exercise
             //}
             //Console.WriteLine("Positive Numbers: " + positiveCount + "\n" + "Negative Numbers: " + negativeCount);
 
-            //// Q12 - Print the highest and the lowest number. Exit program when the entered number is 0
-            //int inputNumberE = 0;
-            //int highestNumber = 0;
-            //int lowestNumber = 0;
+            // Q12 - Print the highest and the lowest number. Exit program when the entered number is 0
+            int inputNumber1 = 0;
+            int inputNumber2 = 0;
+            int highestNumber = 0;
+            int lowestNumber = 0;
 
-            //Console.WriteLine("Please enter a number");
-            //inputNumberD = int.Parse(Console.ReadLine());
-            //while (inputNumberE != 0)
-            //{
+            Console.WriteLine("Please enter two numbers");
+            inputNumber1 = int.Parse(Console.ReadLine());
+            inputNumber2 = int.Parse(Console.ReadLine());
 
-            //}
+
+            while (inputNumber1 != 0 || inputNumber2 != 0)
+            {
+                if (inputNumber1 > inputNumber2)
+                {
+                    highestNumber = inputNumber1;
+                    lowestNumber = inputNumber2;
+                }
+
+            }
+
+
+            Console.WriteLine("The highest number is " + highestNumber + "\n" + "The lowest number is " + lowestNumber);
+
+
+
+
+
+
 
             //// Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
             //int inputNumberF = 0;
@@ -248,30 +266,30 @@ namespace HU_M01L05_Exercise
             //}
             //Console.WriteLine("Number of lemons: " + lemonsCount + "\n" + "Number of oranges: " + orangesCound);
 
-            // Q24 - Print only the first name of the pepole with the last name of "Cohen". Exit program when pepole with last name of "Levi" was entered. 
-            Console.WriteLine("Please enter first name");
-            string firstName = Console.ReadLine();
-            Console.WriteLine("Please enter last name");
-            string lastName = Console.ReadLine();
+            //// Q24 - Print only the first name of the pepole with the last name of "Cohen". Exit program when pepole with last name of "Levi" was entered. 
+            //Console.WriteLine("Please enter first name");
+            //string firstName = Console.ReadLine();
+            //Console.WriteLine("Please enter last name");
+            //string lastName = Console.ReadLine();
 
-            while (lastName != "Levi")
-            {
-                if (lastName == "Cohen")
-                {
-                    Console.WriteLine("The first name is " + firstName);
-                    Console.WriteLine("Please enter first name");
-                    firstName = Console.ReadLine();
-                    Console.WriteLine("Please enter last name");
-                    lastName = Console.ReadLine();
-                }
-                else
-                {
-                    Console.WriteLine("Please enter first name");
-                    firstName = Console.ReadLine();
-                    Console.WriteLine("Please enter last name");
-                    lastName = Console.ReadLine();
-                }
-            }
+            //while (lastName != "Levi")
+            //{
+            //    if (lastName == "Cohen")
+            //    {
+            //        Console.WriteLine("The first name is " + firstName);
+            //        Console.WriteLine("Please enter first name");
+            //        firstName = Console.ReadLine();
+            //        Console.WriteLine("Please enter last name");
+            //        lastName = Console.ReadLine();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Please enter first name");
+            //        firstName = Console.ReadLine();
+            //        Console.WriteLine("Please enter last name");
+            //        lastName = Console.ReadLine();
+            //    }
+            //}
 
             //// Q25 - Print the the lowercase and uppercase count. Exit program when a number is entered. 
             //int upperCount = 0;
