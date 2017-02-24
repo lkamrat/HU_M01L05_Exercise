@@ -146,20 +146,20 @@ namespace HU_M01L05_Exercise
 
             //Console.WriteLine("Even numbers count is " + evenNumberCount + "\n" + "Odd numbers count is " + oddNumberCount);
 
-            //// Q10 - Print the number's backwards binary representation
-            //int inputNumberC = 0;
-            //string binary = null;
-            //string reverseBinary = null;
+            // Q10 - Print the number's backwards binary representation
+            int inputNumberC = 0;
+            string binary = null;
+            string reverseBinary = null;
 
-            //do
-            //{
-            //    Console.WriteLine("Please enter a number");
-            //    inputNumberC = int.Parse(Console.ReadLine());
-            //    binary = Convert.ToString(inputNumberC, 2);
-            //    reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
-            //    Console.WriteLine(binary);
-            //    Console.WriteLine(reverseBinary);
-            //} while (inputNumberC > 0);
+            do
+            {
+                Console.WriteLine("Please enter a number");
+                inputNumberC = int.Parse(Console.ReadLine());
+                binary = Convert.ToString(inputNumberC, 2);
+                reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
+                Console.WriteLine(binary);
+                Console.WriteLine(reverseBinary);
+            } while (inputNumberC > 0);
 
             //// Q11 - Print the count of positive and negative numbers. Exit program when the entered number is 0
             //int inputNumberD = 0;
@@ -191,20 +191,20 @@ namespace HU_M01L05_Exercise
             Console.WriteLine("Please enter two numbers");
             inputNumber1 = int.Parse(Console.ReadLine());
             inputNumber2 = int.Parse(Console.ReadLine());
-
+            if (inputNumber1 > inputNumber2)
+            {
+                highestNumber = inputNumber1;
+                lowestNumber = inputNumber2;
+            }
 
             while (inputNumber1 != 0 || inputNumber2 != 0)
             {
-                if (inputNumber1 > inputNumber2)
-                {
-                    highestNumber = inputNumber1;
-                    lowestNumber = inputNumber2;
-                }
 
-            }
+                Console.WriteLine("The highest number is " + highestNumber + "\n" + "The lowest number is " + lowestNumber);
 
 
-            Console.WriteLine("The highest number is " + highestNumber + "\n" + "The lowest number is " + lowestNumber);
+            } while (inputNumber1 != 0 || inputNumber2 != 0);
+
 
             //// Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
             //int inputNumberF = 0;
