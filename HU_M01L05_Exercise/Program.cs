@@ -146,20 +146,20 @@ namespace HU_M01L05_Exercise
 
             //Console.WriteLine("Even numbers count is " + evenNumberCount + "\n" + "Odd numbers count is " + oddNumberCount);
 
-            // Q10 - Print the number's backwards binary representation
-            int inputNumberC = 0;
-            string binary = null;
-            string reverseBinary = null;
+            //// Q10 - Print the number's backwards binary representation
+            //int inputNumberC = 0;
+            //string binary = null;
+            //string reverseBinary = null;
 
-            do
-            {
-                Console.WriteLine("Please enter a number");
-                inputNumberC = int.Parse(Console.ReadLine());
-                binary = Convert.ToString(inputNumberC, 2);
-                reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
-                Console.WriteLine(binary);
-                Console.WriteLine(reverseBinary);
-            } while (inputNumberC > 0);
+            //do
+            //{
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumberC = int.Parse(Console.ReadLine());
+            //    binary = Convert.ToString(inputNumberC, 2);
+            //    reverseBinary = new string(binary.ToCharArray().Reverse().ToArray());
+            //    Console.WriteLine(binary);
+            //    Console.WriteLine(reverseBinary);
+            //} while (inputNumberC > 0);
 
             //// Q11 - Print the count of positive and negative numbers. Exit program when the entered number is 0
             //int inputNumberD = 0;
@@ -182,29 +182,25 @@ namespace HU_M01L05_Exercise
             //}
             //Console.WriteLine("Positive Numbers: " + positiveCount + "\n" + "Negative Numbers: " + negativeCount);
 
-            // Q12 - Print the highest and the lowest number. Exit program when the entered number is 0
-            int inputNumber1 = 0;
-            int inputNumber2 = 0;
-            int highestNumber = 0;
-            int lowestNumber = 0;
-
-            Console.WriteLine("Please enter two numbers");
-            inputNumber1 = int.Parse(Console.ReadLine());
-            inputNumber2 = int.Parse(Console.ReadLine());
-            if (inputNumber1 > inputNumber2)
-            {
-                highestNumber = inputNumber1;
-                lowestNumber = inputNumber2;
-            }
-
-            while (inputNumber1 != 0 || inputNumber2 != 0)
-            {
-
-                Console.WriteLine("The highest number is " + highestNumber + "\n" + "The lowest number is " + lowestNumber);
-
-
-            } while (inputNumber1 != 0 || inputNumber2 != 0);
-
+            //// Q12 - Print the highest and the lowest number. Exit program when the entered number is 0
+            //Console.WriteLine("Please enter a number");
+            //int inputNumber = int.Parse(Console.ReadLine());
+            //int highestNum = inputNumber;
+            //int lowestNum = inputNumber;
+            //while (inputNumber != 0)
+            //{
+            //    if (inputNumber > highestNum)
+            //    {
+            //        highestNum = inputNumber;
+            //    }
+            //    if (inputNumber < lowestNum)
+            //    {
+            //        lowestNum = inputNumber;
+            //    }
+            //    Console.WriteLine("Please enter a number");
+            //    inputNumber = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("The highest number is " + highestNum + "\nThe lowest number is " + lowestNum);
 
             //// Q13 - Print the number of times the number "10" was entered. Exit program when the entered number is 12
             //int inputNumberF = 0;
@@ -222,8 +218,23 @@ namespace HU_M01L05_Exercise
             //}
             //Console.WriteLine("The number of times the number 10 was entered is " + tenCount);
 
-            //// Q21 - Print the result of "y=0.5x+60". Exit program if y=100
+            // Q14 - Print all 3-digit numbers with the same digits
+            Console.WriteLine("Please enter 3-digit number");
+            string threeDigit = Console.ReadLine();
+            while (threeDigit.Length == 3)
+            {
+                if (threeDigit.ElementAt(0).Equals(threeDigit.ElementAt(1)) && threeDigit.ElementAt(1).Equals(threeDigit.ElementAt(2)))
+                {
+                    Console.WriteLine(threeDigit);
+                }
+                Console.WriteLine("Please enter 3-digit number");
+                threeDigit = Console.ReadLine();
+            }
 
+
+
+
+            //// Q21 - Print the result of "y=0.5x+60". Exit program if y=100
             //int x = 0;
             //double y = 0;
 
