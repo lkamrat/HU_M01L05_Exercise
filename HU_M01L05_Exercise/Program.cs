@@ -231,8 +231,24 @@ namespace HU_M01L05_Exercise
                 threeDigit = Console.ReadLine();
             }
 
-
-
+            Console.WriteLine("Please enter 3-digit number"); // This method is by working math
+            string threeDigitNumStr = Console.ReadLine();
+            int digit1 = 0;
+            int digit2 = 0;
+            int digit3 = 0;
+            while (threeDigitNumStr.Length == 3)
+            {
+                int threeDigitNum = int.Parse(threeDigitNumStr);
+                digit1 = threeDigitNum / 100;
+                digit2 = (threeDigitNum / 10) %10;
+                digit3 = threeDigitNum % 10;
+                if (digit1 == digit2 && digit2 == digit3)
+                {
+                    Console.WriteLine(threeDigitNum);
+                }
+                Console.WriteLine("Please enter 3-digit number");
+                threeDigitNumStr = Console.ReadLine(); 
+            }
 
             //// Q21 - Print the result of "y=0.5x+60". Exit program if y=100
             //int x = 0;
